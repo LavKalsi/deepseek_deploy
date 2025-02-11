@@ -4,7 +4,7 @@ from transformers import pipeline
 # Initialize the model pipeline
 @st.cache_resource()
 def load_model():
-    return pipeline("text-generation", model="deepseek-ai/DeepSeek-R1", trust_remote_code=True)
+    return pipeline("text-generation", model="deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B", trust_remote_code=True)
 
 pipe = load_model()
 
